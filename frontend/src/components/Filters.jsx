@@ -10,7 +10,7 @@ const Filters = ({ setMainData }) => {
 
     const getDataFromDB = async(year) => {
         try{
-            const response = await axios.get(`http://localhost:8000/api/data/year/${year}`);
+            const response = await axios.get(`https://fluffy-funicular-alpha.vercel.app/api/data/year/${year}`);
             setMainData(response.data.data)
         }
         catch(e){
@@ -20,7 +20,7 @@ const Filters = ({ setMainData }) => {
 
     const handleReset = async() => {
         try{
-            const response = await axios.get("http://localhost:8000/api/data/all");
+            const response = await axios.get("https://fluffy-funicular-alpha.vercel.app/api/data/all");
             setMainData(response.data.data)
         }
         catch(e){
