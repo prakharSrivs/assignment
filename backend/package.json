@@ -11,7 +11,7 @@
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "devranjanmahato77",
+  "author": "suyash",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
